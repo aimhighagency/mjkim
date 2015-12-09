@@ -1,0 +1,86 @@
+/* VARS 
+-------------------------------------------------------------- */
+$main_width:      1200px;
+$body_pad:			20px;
+$gutter:				20px;
+$header_height:	50px;
+$gallery_width: 	700px;
+
+$bp_lg:           1400px;
+$bp_med:          1080px;
+$bp_sm:           700px;
+
+/*  COLORS  */
+$color_main:         #2d2d2d;                 
+$color_accent:       #3fdbd2;              
+$color_main_lt:      #999;
+$color_error:        #b54747;
+$color_warning:      #f0da72;
+
+$page_bg:            #fff;
+$page_med:           darken($page_bg, 5%);
+$page_lt:            #405858;
+$page_dark:          #2b3232;
+
+/*  TYPOGROPHY */
+$font_main:					'Lato', sans-serif;
+$font_header:				'Lato', sans-serif;
+$font_fancy:        		'Lato', sans-serif;
+
+$font_weight_lt:         100;
+$font_weight_reg:        400;
+$font_weight_bold:       700;
+
+/*  TRANSITIONS  */
+$trans:	  					.3s;
+$default-transition-property : all;
+$default-transition-duration : .3s;
+$default-transition-function : false;
+$default-transition-delay    : false;
+
+$default-box-shadow-color: #111;
+$default-box-shadow-h-offset: 0px;
+$default-box-shadow-v-offset: 0px;
+$default-box-shadow-blur: 3px;
+
+/* MIX-INS 
+-------------------------------------------------------------- */
+@mixin bp($point) {
+  @if $point == l {
+    @media (max-width: $bp_lg) { @content; }
+  }
+  @else if $point == m {
+    @media (max-width: $bp_med) { @content; }
+  }
+  @else if $point == s {
+    @media (max-width: $bp_sm)  { @content; }
+  }
+}
+
+
+
+/* PLACEHOLDERS & EXTENDS
+-------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

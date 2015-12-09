@@ -1,0 +1,913 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 16, ../sass/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 19, ../sass/_reset.scss */
+body {
+  line-height: 1; }
+
+/* line 22, ../sass/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 25, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 29, ../sass/_reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+/* line 34, ../sass/_reset.scss */
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 38, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'LatoBold';
+  src: url("../fonts/lato-bold.eot");
+  src: url("../fonts/lato-bold.eot") format("embedded-opentype"), url("../fonts/lato-bold.woff") format("woff"), url("../fonts/lato-bold.ttf") format("truetype"), url("../fonts/lato-bold.svg#LatoBold") format("svg"); }
+@font-face {
+  font-family: 'LatoLight';
+  src: url("../fonts/lato-light.eot");
+  src: url("../fonts/lato-light.eot") format("embedded-opentype"), url("../fonts/lato-light.woff") format("woff"), url("../fonts/lato-light.ttf") format("truetype"), url("../fonts/lato-light.svg#LatoLight") format("svg"); }
+@font-face {
+  font-family: 'theadmin';
+  src: url("../fonts/theadmin.eot?1o50p");
+  src: url("../fonts/theadmin.eot?#iefix1o50p") format("embedded-opentype"), url("../fonts/theadmin.woff?1o50p") format("woff"), url("../fonts/theadmin.ttf?1o50p") format("truetype"), url("../fonts/theadmin.svg?1o50p#theadmin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* line 12, ../sass/_icons.scss */
+[class^="icon-"], [class*=" icon-"], a.service-links-twitter, a.service-links-facebook, a.service-links-google-plus {
+  font-family: 'theadmin';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+/* line 29, ../sass/_icons.scss */
+[class^="icon-"] img, [class*=" icon-"] img, a.service-links-twitter img, a.service-links-facebook img, a.service-links-google-plus img {
+  display: none; }
+
+/* line 35, ../sass/_icons.scss */
+.icon-facebook:before {
+  content: "\e900"; }
+
+/* line 38, ../sass/_icons.scss */
+.icon-soundcloud:before {
+  content: "\e901"; }
+
+/* line 41, ../sass/_icons.scss */
+.icon-vine:before {
+  content: "\e902"; }
+
+/* line 44, ../sass/_icons.scss */
+.icon-yelp:before {
+  content: "\e903"; }
+
+/* line 47, ../sass/_icons.scss */
+.icon-flickr:before {
+  content: "\e904"; }
+
+/* line 50, ../sass/_icons.scss */
+.icon-google:before {
+  content: "\e905"; }
+
+/* line 53, ../sass/_icons.scss */
+.icon-instagram:before {
+  content: "\e906"; }
+
+/* line 56, ../sass/_icons.scss */
+.icon-linkedin:before {
+  content: "\e907"; }
+
+/* line 59, ../sass/_icons.scss */
+.icon-pinterest:before {
+  content: "\e908"; }
+
+/* line 62, ../sass/_icons.scss */
+.icon-stumbleupon:before {
+  content: "\e909"; }
+
+/* line 65, ../sass/_icons.scss */
+.icon-tumblr:before {
+  content: "\e90a"; }
+
+/* line 68, ../sass/_icons.scss */
+.icon-twitter:before {
+  content: "\e90b"; }
+
+/* line 71, ../sass/_icons.scss */
+.icon-vimeo:before {
+  content: "\e90c"; }
+
+/* line 74, ../sass/_icons.scss */
+.icon-youtube:before {
+  content: "\e90d"; }
+
+/* line 77, ../sass/_icons.scss */
+.icon-angle-left:before {
+  content: "\f104"; }
+
+/* line 80, ../sass/_icons.scss */
+.icon-angle-right:before {
+  content: "\f105"; }
+
+/* line 83, ../sass/_icons.scss */
+.icon-angle-up:before {
+  content: "\f106"; }
+
+/* line 86, ../sass/_icons.scss */
+.icon-angle-down:before {
+  content: "\f107"; }
+
+/* line 89, ../sass/_icons.scss */
+.icon-code:before {
+  content: "\f121"; }
+
+/* line 92, ../sass/_icons.scss */
+.icon-eye:before {
+  content: "\e000"; }
+
+/* line 95, ../sass/_icons.scss */
+.icon-paper-clip:before {
+  content: "\e001"; }
+
+/* line 98, ../sass/_icons.scss */
+.icon-mail:before {
+  content: "\e002"; }
+
+/* line 101, ../sass/_icons.scss */
+.icon-link:before {
+  content: "\e005"; }
+
+/* line 104, ../sass/_icons.scss */
+.icon-bell:before {
+  content: "\e006"; }
+
+/* line 107, ../sass/_icons.scss */
+.icon-lock:before {
+  content: "\e007"; }
+
+/* line 110, ../sass/_icons.scss */
+.icon-unlock:before {
+  content: "\e008"; }
+
+/* line 113, ../sass/_icons.scss */
+.icon-image:before {
+  content: "\e010"; }
+
+/* line 116, ../sass/_icons.scss */
+.icon-clock:before {
+  content: "\e014"; }
+
+/* line 119, ../sass/_icons.scss */
+.icon-camera:before {
+  content: "\e017"; }
+
+/* line 122, ../sass/_icons.scss */
+.icon-video:before {
+  content: "\e018"; }
+
+/* line 125, ../sass/_icons.scss */
+.icon-monitor:before {
+  content: "\e021"; }
+
+/* line 128, ../sass/_icons.scss */
+.icon-cog:before {
+  content: "\e023"; }
+
+/* line 131, ../sass/_icons.scss */
+.icon-heart:before {
+  content: "\e024"; }
+
+/* line 134, ../sass/_icons.scss */
+.icon-layers:before {
+  content: "\e031"; }
+
+/* line 137, ../sass/_icons.scss */
+.icon-paper:before {
+  content: "\e034"; }
+
+/* line 140, ../sass/_icons.scss */
+.icon-search:before {
+  content: "\e036"; }
+
+/* line 143, ../sass/_icons.scss */
+.icon-zoom-in:before {
+  content: "\e037"; }
+
+/* line 146, ../sass/_icons.scss */
+.icon-zoom-out:before {
+  content: "\e038"; }
+
+/* line 149, ../sass/_icons.scss */
+.icon-reply:before {
+  content: "\e039"; }
+
+/* line 152, ../sass/_icons.scss */
+.icon-circle-plus:before {
+  content: "\e040"; }
+
+/* line 155, ../sass/_icons.scss */
+.icon-circle-minus:before {
+  content: "\e041"; }
+
+/* line 158, ../sass/_icons.scss */
+.icon-circle-check:before {
+  content: "\e042"; }
+
+/* line 161, ../sass/_icons.scss */
+.icon-circle-cross:before {
+  content: "\e043"; }
+
+/* line 164, ../sass/_icons.scss */
+.icon-microphone:before {
+  content: "\e048"; }
+
+/* line 167, ../sass/_icons.scss */
+.icon-skip-back:before {
+  content: "\e050"; }
+
+/* line 170, ../sass/_icons.scss */
+.icon-rewind:before {
+  content: "\e051"; }
+
+/* line 173, ../sass/_icons.scss */
+.icon-play:before {
+  content: "\e052"; }
+
+/* line 176, ../sass/_icons.scss */
+.icon-pause:before {
+  content: "\e053"; }
+
+/* line 179, ../sass/_icons.scss */
+.icon-stop:before {
+  content: "\e054"; }
+
+/* line 182, ../sass/_icons.scss */
+.icon-fast-forward:before {
+  content: "\e055"; }
+
+/* line 185, ../sass/_icons.scss */
+.icon-skip-forward:before {
+  content: "\e056"; }
+
+/* line 188, ../sass/_icons.scss */
+.icon-repeat:before {
+  content: "\e058"; }
+
+/* line 191, ../sass/_icons.scss */
+.icon-head:before {
+  content: "\e074"; }
+
+/* line 194, ../sass/_icons.scss */
+.icon-speech-bubble:before {
+  content: "\e076"; }
+
+/* line 197, ../sass/_icons.scss */
+.icon-power:before {
+  content: "\e086"; }
+
+/* line 200, ../sass/_icons.scss */
+.icon-star:before {
+  content: "\e093"; }
+
+/* line 203, ../sass/_icons.scss */
+.icon-arrow-left:before {
+  content: "\e094"; }
+
+/* line 206, ../sass/_icons.scss */
+.icon-arrow-right:before {
+  content: "\e095"; }
+
+/* line 209, ../sass/_icons.scss */
+.icon-arrow-up:before {
+  content: "\e096"; }
+
+/* line 212, ../sass/_icons.scss */
+.icon-arrow-down:before {
+  content: "\e097"; }
+
+/* line 215, ../sass/_icons.scss */
+.icon-volume:before {
+  content: "\e098"; }
+
+/* line 218, ../sass/_icons.scss */
+.icon-mute:before {
+  content: "\e099"; }
+
+/* line 221, ../sass/_icons.scss */
+.icon-bag:before {
+  content: "\e106"; }
+
+/* line 224, ../sass/_icons.scss */
+.icon-ban:before {
+  content: "\e107"; }
+
+/* line 227, ../sass/_icons.scss */
+.icon-flag:before {
+  content: "\e108"; }
+
+/* line 230, ../sass/_icons.scss */
+.icon-trash:before {
+  content: "\e109"; }
+
+/* line 233, ../sass/_icons.scss */
+.icon-expand:before {
+  content: "\e110"; }
+
+/* line 236, ../sass/_icons.scss */
+.icon-contract:before {
+  content: "\e111"; }
+
+/* line 239, ../sass/_icons.scss */
+.icon-maximize:before {
+  content: "\e112"; }
+
+/* line 242, ../sass/_icons.scss */
+.icon-minimize:before {
+  content: "\e113"; }
+
+/* line 245, ../sass/_icons.scss */
+.icon-plus:before {
+  content: "\e114"; }
+
+/* line 248, ../sass/_icons.scss */
+.icon-minus:before {
+  content: "\e115"; }
+
+/* line 251, ../sass/_icons.scss */
+.icon-check:before {
+  content: "\e116"; }
+
+/* line 254, ../sass/_icons.scss */
+.icon-cross:before {
+  content: "\e117"; }
+
+/* line 257, ../sass/_icons.scss */
+.icon-move:before {
+  content: "\e118"; }
+
+/* line 260, ../sass/_icons.scss */
+.icon-menu:before {
+  content: "\e120"; }
+
+/* line 263, ../sass/_icons.scss */
+.icon-file:before {
+  content: "\e124"; }
+
+/* line 266, ../sass/_icons.scss */
+.icon-open:before {
+  content: "\e128"; }
+
+/* line 269, ../sass/_icons.scss */
+.icon-ellipsis:before {
+  content: "\e129"; }
+
+/* line 275, ../sass/_icons.scss */
+.block-btns a {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline; }
+/* line 278, ../sass/_icons.scss */
+.block-btns a:hover {
+  color: #fff !important; }
+/* line 283, ../sass/_icons.scss */
+.block-btns .icon-vimeo:hover {
+  background-color: #aad450; }
+/* line 286, ../sass/_icons.scss */
+.block-btns .icon-twitter:hover {
+  background-color: #00aced; }
+/* line 289, ../sass/_icons.scss */
+.block-btns .icon-facebook:hover {
+  background-color: #3b5998; }
+/* line 292, ../sass/_icons.scss */
+.block-btns .icon-googleplus:hover {
+  background-color: #dd4b39; }
+/* line 295, ../sass/_icons.scss */
+.block-btns .icon-pinterest:hover {
+  background-color: #cb2027; }
+/* line 298, ../sass/_icons.scss */
+.block-btns .icon-instagram:hover {
+  background-color: #517fa4; }
+
+/* VARS 
+-------------------------------------------------------------- */
+/*  COLORS  */
+/*  TYPOGROPHY */
+/*  TRANSITIONS  */
+/* MIX-INS 
+-------------------------------------------------------------- */
+/* PLACEHOLDERS & EXTENDS
+-------------------------------------------------------------- */
+/* BASIC STYLES
+-------------------------------------------------------------- */
+/* line 9, ../sass/style.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+/* line 12, ../sass/style.scss */
+* img {
+  max-width: 100%;
+  height: auto; }
+
+/* line 18, ../sass/style.scss */
+html {
+  min-height: 101%; }
+
+/* line 22, ../sass/style.scss */
+body {
+  font: 16px/1.5 "Lato", sans-serif;
+  background-color: #fff;
+  color: #2d2d2d; }
+
+/* line 28, ../sass/style.scss */
+a {
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #3fdbd2;
+  text-decoration: none; }
+/* line 33, ../sass/style.scss */
+a:hover, a.active {
+  color: #2d2d2d; }
+
+/* line 40, ../sass/style.scss */
+ul, ul.menu, ul.menu li {
+  list-style: none;
+  text-align: inherit;
+  margin: 0;
+  padding: 0; }
+
+/* line 49, ../sass/style.scss */
+li a.active, li.opened span.nolink {
+  color: #fff; }
+
+/* Layout
+-------------------------------------------------------------- */
+/* line 54, ../sass/style.scss */
+#loader {
+  position: fixed;
+  width: 100%;
+  top: 48vh;
+  left: 0;
+  text-align: center;
+  z-index: -1; }
+
+/* line 69, ../sass/style.scss */
+#header-main {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 100%; }
+@media (max-width: 1080px) {
+  /* line 69, ../sass/style.scss */
+  #header-main {
+    position: relative;
+    text-align: center;
+    height: auto; } }
+/* line 85, ../sass/style.scss */
+#header-main a:hover {
+  color: #999; }
+
+/* line 91, ../sass/style.scss */
+#logo {
+  width: 900px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  z-index: 500;
+  margin-left: -460px;
+  text-align: center; }
+/* line 100, ../sass/style.scss */
+#logo a {
+  display: block;
+  font-size: 300px;
+  font-weight: 100;
+  text-transform: uppercase;
+  line-height: 140px;
+  letter-spacing: -20px; }
+@media (max-width: 1080px) {
+  /* line 91, ../sass/style.scss */
+  #logo {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%; }
+  /* line 116, ../sass/style.scss */
+  #logo a {
+    font-size: 40px !important;
+    line-height: normal;
+    letter-spacing: 0; } }
+@media (max-height: 600px) {
+  /* line 125, ../sass/style.scss */
+  #logo a {
+    font-size: 80px !important;
+    line-height: normal;
+    letter-spacing: 0; } }
+
+/* line 134, ../sass/style.scss */
+#nav-holder {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  text-transform: uppercase; }
+/* line 147, ../sass/style.scss */
+#nav-holder .bg {
+  position: absolute;
+  background-color: rgba(45, 45, 45, 0.9);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; }
+
+/* line 158, ../sass/style.scss */
+#nav-main {
+  *zoom: 1;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  position: relative;
+  display: table; }
+/* line 38, ../../../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
+#nav-main:after {
+  content: "";
+  display: table;
+  clear: both; }
+/* line 168, ../sass/style.scss */
+#nav-main .inner {
+  vertical-align: middle;
+  position: relative;
+  display: table-cell;
+  z-index: 100; }
+/* line 178, ../sass/style.scss */
+#nav-main ul.menu li {
+  margin-bottom: 10px; }
+/* line 182, ../sass/style.scss */
+#nav-main ul.menu a {
+  display: block;
+  font-size: 20px;
+  letter-spacing: 4px; }
+/* line 193, ../sass/style.scss */
+#nav-main footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 100; }
+@media (max-width: 1080px) {
+  /* line 203, ../sass/style.scss */
+  #nav-main .inner {
+    vertical-align: top;
+    padding-top: 100px; }
+  /* line 210, ../sass/style.scss */
+  #nav-main ul.menu a {
+    font-size: 20px; } }
+
+/* line 219, ../sass/style.scss */
+.menu-toggle {
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: fixed;
+  z-index: 800;
+  top: 20px;
+  right: 20px;
+  color: #3fdbd2;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 2em;
+  cursor: pointer; }
+/* line 233, ../sass/style.scss */
+.menu-toggle .icon-cross {
+  display: none; }
+/* line 237, ../sass/style.scss */
+.menu-toggle .icon-menu, .menu-toggle .icon-cross {
+  position: absolute;
+  top: 0;
+  right: 0; }
+/* line 244, ../sass/style.scss */
+.menu-toggle:hover {
+  color: #999; }
+@media (max-width: 1080px) {
+  /* line 219, ../sass/style.scss */
+  .menu-toggle {
+    display: block;
+    top: 10px;
+    right: 10px; } }
+
+/* line 257, ../sass/style.scss */
+footer {
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  color: #3fdbd2;
+  margin-top: 40px; }
+/* line 264, ../sass/style.scss */
+footer .email {
+  margin-bottom: 5px; }
+/* line 269, ../sass/style.scss */
+footer .phone {
+  margin-bottom: 10px; }
+/* line 275, ../sass/style.scss */
+footer .social-icons a {
+  font-size: 20px;
+  margin: 0 10px; }
+/* line 281, ../sass/style.scss */
+footer .copy {
+  margin-top: 10px;
+  color: #999;
+  font-size: 12px; }
+@media (max-width: 1080px) {
+  /* line 257, ../sass/style.scss */
+  footer {
+    margin-top: 0; } }
+
+/* line 293, ../sass/style.scss */
+#content {
+  min-height: 100vh; }
+
+/* line 297, ../sass/style.scss */
+#content-main {
+  margin-top: 140px; }
+@media (max-width: 1080px) {
+  /* line 297, ../sass/style.scss */
+  #content-main {
+    margin-top: 0; } }
+
+/* INTRO GALLERY
+-------------------------------------------------------------- */
+/* line 310, ../sass/style.scss */
+.intro-gallery {
+  max-width: 700px;
+  margin: auto; }
+/* line 314, ../sass/style.scss */
+.intro-gallery .item-list ul li {
+  margin: 0;
+  margin-bottom: 10px;
+  line-height: 0; }
+/* line 320, ../sass/style.scss */
+.intro-gallery img {
+  width: 100%;
+  height: auto; }
+
+/* IMAGE GALLERY
+-------------------------------------------------------------- */
+/* line 331, ../sass/style.scss */
+.not-front.node-type-image-gallery #content-main {
+  margin-top: 80px; }
+@media (max-width: 1080px) {
+  /* line 331, ../sass/style.scss */
+  .not-front.node-type-image-gallery #content-main {
+    margin-top: 0; } }
+/* line 339, ../sass/style.scss */
+.not-front.node-type-image-gallery #logo {
+  top: 0; }
+/* line 343, ../sass/style.scss */
+.not-front.node-type-image-gallery #logo a {
+  font-size: 120px;
+  letter-spacing: 0; }
+
+/* line 351, ../sass/style.scss */
+.gallery {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  min-height: 100vh; }
+/* line 359, ../sass/style.scss */
+.gallery .images ul {
+  margin: 0 !important; }
+/* line 363, ../sass/style.scss */
+.gallery .images li {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+  padding: 80px 20px;
+  height: 100%;
+  display: none; }
+/* line 376, ../sass/style.scss */
+.gallery .images li .image-group, .gallery .images li .single-image {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+/* line 383, ../sass/style.scss */
+.gallery .images li img {
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%; }
+@media (max-width: 1080px) {
+  /* line 363, ../sass/style.scss */
+  .gallery .images li {
+    position: relative !important;
+    top: auto;
+    left: auto;
+    height: auto;
+    padding: 2px 10px;
+    display: block !important; }
+  /* line 399, ../sass/style.scss */
+  .gallery .images li img {
+    margin-top: 0 !important; } }
+/* line 405, ../sass/style.scss */
+.gallery .images .captions {
+  *zoom: 1;
+  font-size: .6em;
+  text-align: center;
+  margin: auto;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+/* line 38, ../../../../../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
+.gallery .images .captions:after {
+  content: "";
+  display: table;
+  clear: both; }
+/* line 414, ../sass/style.scss */
+.gallery .images .captions .caption {
+  text-align: left; }
+/* line 418, ../sass/style.scss */
+.gallery .images .captions .c-left {
+  float: left; }
+/* line 422, ../sass/style.scss */
+.gallery .images .captions .c-right {
+  float: right; }
+@media (max-width: 1080px) {
+  /* line 405, ../sass/style.scss */
+  .gallery .images .captions {
+    margin-bottom: 20px; } }
+
+/* line 436, ../sass/style.scss */
+#controls {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 20px; }
+/* line 444, ../sass/style.scss */
+#controls .item-next, #controls .item-last {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px; }
+/* line 455, ../sass/style.scss */
+#controls .item-next:hover, #controls .item-last:hover {
+  color: #3fdbd2; }
+/* line 460, ../sass/style.scss */
+#controls .item-last {
+  background-position: -15px 0; }
+@media (max-width: 1080px) {
+  /* line 436, ../sass/style.scss */
+  #controls {
+    display: none !important; } }
+
+/* line 469, ../sass/style.scss */
+.extras {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  background-color: #f2f2f2;
+  height: 40px;
+  text-align: center;
+  line-height: 35px;
+  padding: 0 20px; }
+
+/* line 478, ../sass/style.scss */
+.image-count {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  text-transform: uppercase;
+  font-size: .8em;
+  letter-spacing: 1px;
+  margin-right: 10px;
+  font-weight: 700; }
+
+/* line 489, ../sass/style.scss */
+.thumbs-btn {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  margin: 0 15px; }
+/* line 499, ../sass/style.scss */
+.thumbs-btn span {
+  width: 3px;
+  height: 3px;
+  display: block;
+  float: left;
+  margin: 1.5px;
+  background-color: #2d2d2d; }
+/* line 513, ../sass/style.scss */
+.thumbs-btn:hover span {
+  background-color: #3fdbd2; }
+
+/* line 522, ../sass/style.scss */
+.node-type-image-gallery .thumbs {
+  display: none;
+  width: 98%;
+  margin: 0 auto; }
+/* line 527, ../sass/style.scss */
+.node-type-image-gallery .thumbs .captions {
+  display: none !important; }
+/* line 531, ../sass/style.scss */
+.node-type-image-gallery .thumbs li {
+  width: 20%;
+  margin: 0;
+  line-height: 0;
+  padding: 4px;
+  cursor: pointer; }
+@media (max-width: 1080px) {
+  /* line 531, ../sass/style.scss */
+  .node-type-image-gallery .thumbs li {
+    width: 33.3%; } }
+@media (max-width: 700px) {
+  /* line 531, ../sass/style.scss */
+  .node-type-image-gallery .thumbs li {
+    width: 50%; } }
+
+/* line 549, ../sass/style.scss */
+.krumo-root {
+  z-index: 1000; }
+
+/* line 555, ../sass/style.scss */
+.service-links li {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline; }
