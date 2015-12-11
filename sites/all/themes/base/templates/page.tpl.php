@@ -10,13 +10,15 @@
 				</div>
 				<footer>
 					<div class="contact">
-						<div class="email"><a href="mailto:studio@mjkimpictures.com">studio@mjkimpictures.com</a></div>
-						<div class="phone">(323) 123-4567</div>
-						<div class="social-icons">
-							<a href="http://twitter.com/" class="icon-twitter" target="_blank"></a>
-							<a href="http://instagram.com/" class="icon-instagram" target="_blank"></a>
-							<a href="http://pinterest" class="icon-pinterest" target="_blank"></a>
-						</div>		
+						<div class="email"><a href="mailto:mj@mjkimpictures.com">mj@mjkimpictures.com</a></div>
+							<div class="phone">+1 310 210 5575 (US)</div>
+							<div class="phone">+44 7957 829 024 (UK)</div>
+							<div class="phone">+82 10 7531 0303 (S.Korea)</div>
+							<div class="social-icons">
+								<a href="http://twitter.com/mjkim_lalala" class="icon-twitter" target="_blank"></a>
+								<a href="http://instagram.com/mjkim_lalala" class="icon-instagram" target="_blank"></a>
+								<a href="http://facebook.com/mjkimpictures" class="icon-facebook" target="_blank"></a>
+							</div>				
 					</div>
 
 					<div class="copy">
@@ -62,6 +64,7 @@
 		<div class="social-icons">
 			<a href="http://twitter.com/mjkim_lalala" class="icon-twitter" target="_blank"></a>
 			<a href="http://instagram.com/mjkim_lalala" class="icon-instagram" target="_blank"></a>
+			<a href="http://facebook.com/mjkimpictures" class="icon-facebook" target="_blank"></a>
 		</div>		
 	</div>
 
