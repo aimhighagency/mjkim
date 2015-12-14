@@ -518,7 +518,7 @@ li a.active, li.opened span.nolink {
   text-transform: uppercase;
   line-height: 140px;
   letter-spacing: -20px; }
-@media (max-width: 1080px) {
+@media (max-width: 700px) {
   /* line 91, ../sass/style.scss */
   #logo {
     position: relative;

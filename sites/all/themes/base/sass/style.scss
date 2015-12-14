@@ -106,7 +106,7 @@ li a.active, li.opened span.nolink{color: #fff;}
     letter-spacing: -20px;
   }
 
-  @include bp(m){
+  @include bp(s){
     position: relative;
     top: 0;
     left: 0;

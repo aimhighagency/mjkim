@@ -18,6 +18,9 @@ Drupal.behaviors.init_gallery = {
 			var footer = jQuery('#footer-main');
 			var logo = jQuery('#logo');
 			var body = jQuery('body');
+			var mous_pos;
+			var page_w;
+			var win = jQuery(window);
 
 			var slide_show;
 
@@ -154,8 +157,16 @@ Drupal.behaviors.init_gallery = {
 				return false;
 			});
 
-			jQuery('.gallery.full.is-not-thumb .images li').click(function(){
-				nextItem();
+			jQuery('.gallery.full.is-not-thumb .images li').click(function(e){
+				mouse_pos = e.pageX;
+				page_w = win.width();
+
+				if(mouse_pos > (page_w/2)){
+					nextItem();
+				}else{
+					lastItem();
+				}
+				
 				clearInterval(slide_show);
 				return false;
 			});
