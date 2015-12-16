@@ -76,7 +76,7 @@ li a.active, li.opened span.nolink{color: #fff;}
   //height: $header_height;
   //line-height: $header_height;
   
-  @include bp(m){
+  @include bp(s){
     position: relative;
     text-align: center;
     height: auto;
@@ -104,6 +104,15 @@ li a.active, li.opened span.nolink{color: #fff;}
     text-transform: uppercase;
     line-height: 140px;
     letter-spacing: -20px;
+  }
+
+  @include bp(m){
+    
+
+    a{
+      font-size: 140px !important;
+    
+    }
   }
 
   @include bp(s){
@@ -198,7 +207,7 @@ li a.active, li.opened span.nolink{color: #fff;}
     z-index: 100;
   }
 
-  @include bp(m){
+  @include bp(s){
     
     .inner{
       vertical-align: top;
