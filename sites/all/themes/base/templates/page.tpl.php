@@ -12,7 +12,7 @@
 					<div class="contact">
 						<div class="email"><a href="mailto:mj@mjkimpictures.com">mj@mjkimpictures.com</a></div>
 							<div class="phone">+1 310 210 5575 (US)</div>
-							<div class="phone">+44 7957 829 024 (UK)</div>
+							<div class="phone">+44 7771 939 487 (UK)</div>
 							<div class="phone">+82 10 7531 0303 (S.Korea)</div>
 							<div class="social-icons">
 								<a href="http://twitter.com/mjkim_lalala" class="icon-twitter" target="_blank"></a>
@@ -22,7 +22,7 @@
 					</div>
 
 					<div class="copy">
-						&copy; <?php echo date('Y'); ?> MJ Kim Pictures &mdash; Don't Steel. It's not nice.
+						&copy; <?php echo date('Y'); ?> MJ Kim Pictures &mdash; Don't Steal. It's not nice.
 					</div>
 				</footer>
 				<div class="bg"></div>
